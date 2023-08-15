@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="{{this_product.image_url}}" alt="Product Image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h1>{{this_product.name}}</h1>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna sit amet eros efficitur tincidunt.</p>
+            <p class="h3">Rs.{{this_product.price}}</p>
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
